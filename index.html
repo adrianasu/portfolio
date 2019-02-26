@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio that contains my projects 
+        finished during Thinkful's Full Stack Developer Bootcamp.">
+    <meta name="author" content="Adriana Suarez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Adriana Suarez</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <!-- <a href="#home" class="logo">Adriana Suarez</a> -->
+            <div class="site-nav">
+                <a href="#projects">PROJECTS</a>
+                <a href="https://github.com/adrianasu?tab=repositories">GITHUB</a>
+                <a href="#contact">LINKEDIN</a>
+                <a href="#contact">LinkedIn</a>
+            </div>
+            <div class="nav-toggle-button">
+                <button class="toggle-button">
+                    <span class="toggle-button-line"></span>
+                    <span class="toggle-button-line"></span>
+                    <span class="toggle-button-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="bg-skew">
+            <section class="intro">
+                <p>Hi,</p>
+                <p>I'm <span class="orange"> Adriana Suarez.</span></p>
+                <p>I'm a full-stack web developer.</p>
+                <a href="#projects">View my projects</a>
+            </section>
+        </div>
+        <section class="about">
+            <h1>About</h1>
+            <p></p>
+            <p>
+               I enjoy working on JavaScript full-stack applications. 
+               I like creating responsive and intuitive sites using
+               HTML, CSS, React and JQuery. On the back-end, I have 
+               experience in Node, Express and Mongo.
+            </p>
+        </section>
+        <section class="projects">
+            <h1>Projects</h1>
+            <div>
+                <h2>The Warehouse Caddy</h2>
+                <img 
+                    src="images/warehouse-screenshots.png" 
+                    class="screenshot"
+                    alt="Landing page of Warehouse App on portrait view and Results display on landscape view." />
+                <div class="buttons-container">
+                    <img src="images/github-logo.png" class="logo"
+                    alt="Github octocat logo." />
+                    <button type="button">Demo</button>
+                </div>
+                <p>
+                    This app will allow users to manage and track their
+                    tools and equipment. Depending on the user level, the
+                    app is designed
+                </p>
+                <img 
+                    src="images/warehouse-logos.png" 
+                    class="stack"
+                    alt="HTML, CSS, JavaScript, React, Node, Mongo, Mocha, Chai, Heroku and Travis logos" />
+            </div>
+            
+            <div>
+                <h2>Ready2Go</h2>
+                <img 
+                    src="images/access-screenshots.png" 
+                    class="screenshot"
+                    alt="Landing page of Access Control App on landscape view and Results display on portrait view." />
+
+                <p>
+                    I designed this app to help people control the access 
+                    to their facility. The idea is that when providing a 
+                    valid ID a person will be allowed into that location or
+                    not depending on configurable factors such as
+                    authorization, current payment status, traninigs, etc.
+                </p>
+                <img src="images/access-logos.png" class="stack" alt="HTML, CSS, JavaScript, JQuery, Node, Mongo, Mocha, Chai, Heroku and Travis logos" />
+                
+            </div>
+            <div>
+                <h2>Pets++</h2>
+                <img 
+                    src="images/pets-screenshots.png" 
+                    class="screenshot"
+                    alt="Landing page of Vets and Pets App on portrait view and Results display on landscape view." />
+            
+            
+                <p>
+                    If you like pets, this app is for you!
+                    I built this app to quickly find information
+                    (address and phone number) and the location on
+                    a map of the pet shops and vets around you when
+                    providing a zip code.
+                    It combines the information from Yelp and
+                    Google Maps APIs.
+                </p>
+                <img 
+                    src="images/pets-logos.png" 
+                    class="stack" 
+                    alt="HTML, CSS, JavaScript and JQuery logos" />
+            </div>
+           
+        </section>
+        <section class="contact">
+            <h1>Contact</h1>
+            <p>I'm available for work, get in touch</p>
+            <p>adrianasu.codes@gmail.com</p>
+            <p>LinkedIn</p>
+        </section>
+    </main>
+</body>
+</html>

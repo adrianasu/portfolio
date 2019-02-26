@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #faf9f9;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.about, .contact {
+    padding: 1em 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.orange {
+    color: orange;
+}
+
+.bg-skew {
+    background: linear-gradient(to bottom right, #13334c, #41a7b3);
+    -webkit-transform: skew(0deg, -15deg);
+    transform: skew(0deg, -15deg);
+    padding: 7em 0 6em;
+    margin-top: -12em;
+    margin-bottom: 4em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    -webkit-transform: skew(0deg, 15deg);
+    transform: skew(0deg, 15deg);
+    padding-top: 8em;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.intro p {
+    text-align: left;
+    font-size: 1.5em;
+    color: #faf9f9;
+}
+
+.intro a {
+    text-align: center;
+    margin: auto;
+    color: #13334c;
+    display: block;
+    font-size: 1.2em;
+    width: 75%;
+    background-color: white;
+    padding: .7em .6em;
+    border-radius: 40px;
+    margin-top: 3em;
+    box-shadow: 1px 2px 1px #98ccd3;
+    transition: background-color .5s ease;
+}
+
+.intro a:hover, .intro a:focus {
+    background-color: #41a7b3;
+    color: white;
+}
+
+.projects {
+    margin-top: 2em;
+}
+
+.projects>div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    background: white;
+}
+
+.stack, .screenshot {
+    display: block;
+    margin: auto;
+}
+
+.stack {
+    max-width: 70%;
+}
+
+.screenshot {
+    max-width: 85%;
+}
+
+.logo {
+    max-width: 3em;
+    margin: auto 1em;
+    float: left;
+    margin-left: 40%;
+}
+
+.project>p{
+    clear: left;
+}
+
+.projects button {
+    background-color: black;
+    color: white;
+    padding: 1em .5em;
+    border: none;
+    border-radius: 50px;
+    margin: auto 1em;
+    float: left;
+    margin-left: 10%;
+}
+.buttons-container{
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+}
+
+@media (orientation: landscape) {
+    .bg-skew {
+        margin-top: -15em;
+        -webkit-transform: skew(0deg, -25deg);
+        transform: skew(0deg, -25deg);
+    }
+    .intro {
+        -webkit-transform: skew(0deg, 25deg);
+        transform: skew(0deg, 25deg);
+    }
+    .intro a {
+        margin-top: 1em;
+    }
+    .stack {
+        max-width: 60%;
+    }
+    .screenshot {
+        max-width: 65%;
+    }
+}
+
+@media (min-width: 700px) {
+    .stack {
+        max-width: 50%;
+    }
+    .screenshot {
+        max-width: 55%;
+    }
+}
