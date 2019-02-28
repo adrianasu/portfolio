@@ -11,12 +11,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="nav.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Oswald|Indie+Flower" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"></script>
     <title>Adriana Suarez</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <nav class="nav-container js-nav-container">
             <div class="site-nav">
                 <a href="#about">About</a>
@@ -25,7 +23,7 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-toggle-button  js-nav-toggle-button">
-                <button class="toggle-button">
+                <button type="button" aria-label="Navigation Bar" class="toggle-button">
                     <span class="toggle-button-line"></span>
                     <span class="toggle-button-line"></span>
                     <span class="toggle-button-line"></span>
@@ -33,9 +31,9 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main role="main">
         <div class="bg-skew">
-            <section class="intro">
+            <section class="intro" role="contentinfo" aria-label="Intro">
                 <p>Hello,</p>
                 <p>I'm <span class="orange spacing margin-left"> Adriana Suarez.</span></p>
                 <p>I'm a full-stack web developer.</p>
@@ -43,9 +41,8 @@
             </section>
         </div>
         <div id="about" class="anchor" tabindex="-1"></div>
-        <section class="about">
+        <section class="about" role="contentinfo" aria-label="About">
             <h1>About</h1>
-        
             <p>
                I enjoy working on JavaScript full-stack applications. 
                I like creating responsive and intuitive sites using
@@ -54,10 +51,13 @@
             </p>
         </section>
         <div id="projects" class="anchor" tabindex="-1"></div>
-        <section class="projects">
+        <section class="projects" role="contentinfo" aria-label="Projects">
             <h1>Projects</h1>
             <div>
-                <a href="https://warehouse-caddy.herokuapp.com/start" target="_blank">
+                <a  
+                    href="https://warehouse-caddy.herokuapp.com/start" 
+                    target="_blank"
+                    aria-label="Go to The Warehouse Caddy App Demo">
                     <h2>The Warehouse Caddy</h2>
                     <img 
                         src="images/warehouse-screenshots.png" 
@@ -87,7 +87,9 @@
             </div>
             
             <div>
-                <a href="https://ready2go.herokuapp.com/" target="_blank">
+                <a  href="https://ready2go.herokuapp.com/" 
+                    target="_blank"
+                    aria-label="Go to Ready2Go App Demo">
                     <h2>Ready2Go</h2>
                     <img 
                         src="images/access-screenshots.png" 
@@ -113,7 +115,9 @@
                 
             </div>
             <div>
-                <a href="https://adrianasu.github.io/vets-and-petstores/pets-api.html" target="_blank">                
+                <a  href="https://adrianasu.github.io/vets-and-petstores/pets-api.html" 
+                    target="_blank"
+                    aria-label="Go to Pets Demo">                
                     <h2>Pets++</h2>
                     <img 
                         src="images/pets-screenshots.png" 
@@ -143,7 +147,7 @@
            
         </section>
         <div id="contact" class="anchor" tabindex="-1"></div>
-        <section class="contact">
+        <section class="contact" role="contentinfo" aria-label="Contact Information">
             <h1>Contact</h1>
             <p>I'm available for work, get in touch.</p>
             <p>
@@ -151,17 +155,22 @@
                     adrianasu.codes@gmail.com
                 </a>
             </p>
-            <a href="https://github.com/adrianasu" target="_blank">            
+            <a  href="https://github.com/adrianasu" target="_blank"
+                aria-label="Go to Adriana's Github Page.">            
                 <img 
                     src="images/github-logo.png" 
                     class="logo" alt="Github logo." />
             </a>
-            <a href="https://www.linkedin.com/in/adriana-suarez-519718105/" target="_blank">
+            <a  href="https://www.linkedin.com/in/adriana-suarez-519718105/" 
+                target="_blank"
+                aria-label="Go to Adriana's Linkedin information.">
                 <img 
                     src="images/linkedin-logo.png" 
                     class="logo space" alt="Linkedin logo." />
             </a>
         </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
