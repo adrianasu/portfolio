@@ -18,7 +18,7 @@ a {
     cursor: pointer;
 }
 
-.about p, .projects p {
+.about p {
     text-align: left;
 }
 
@@ -28,9 +28,15 @@ h1 {
     font-family: 'Oswald', sans-serif;
 }
 
-h2 {
+.projects h2 {
     font-size: 1.4em;
     margin-bottom: 1em;
+    transition: transform 200ms ease;
+}
+
+.projects h2:hover,
+.projects h2:focus{
+    transform: translateY(-5px);
 }
 
 .orange {
@@ -92,12 +98,12 @@ h2 {
     border-radius: 40px;
     margin-top: 3em;
     box-shadow: 1px 2px 1px #98ccd3;
-    transition: background-color .5s ease;
+    transition: background-color 25ms ease;
 }
 
 .intro a:hover, .intro a:focus {
     background-color: #41a7b3;
-    color: white;
+    color: lightgray;
 }
 
 .projects {
@@ -132,18 +138,34 @@ h2 {
 
 .screenshot {
     max-width: 85%;
+    transition: max-width 200ms ease;
+}
+
+.screenshot:hover,
+.screenshot:focus {
+    max-width: 87%;
 }
 
 .links-container {
     width: 100%;
     margin: 1em auto 0;
     text-align: center;
+    font-size: 1.1em;
+    font-family: 'Oswald',
+    sans-serif;
+
 }
 
 .links-container a {
-    font-size: 1.1em;
-    font-family: 'Oswald', sans-serif;
     letter-spacing: .01em;
+    margin-right: .3em;
+    margin-left: .3em;
+    transition: font-size 50ms ease;
+}
+
+.links-container a:hover,
+.links-container a:focus {
+    color: orange;
 }
 
 .logo {
@@ -154,6 +176,21 @@ h2 {
 .contact {
     text-align: center;
     padding-bottom: 22em;
+}
+.contact .logo{
+    transition: transform 100ms ease;
+}
+
+
+.contact a:focus,
+.contact a:hover{
+    color: orange;
+
+}
+
+.contact .logo:focus,
+.contact .logo:hover{
+    transform: translateY(-8px);
 }
 
 .space {
@@ -195,6 +232,18 @@ h2 {
     .screenshot {
         max-width: 65%;
     }
+
+    .screenshot:hover,
+    .screenshot:focus {
+        max-width: 66%;
+    }
+
+    .links-container a{
+        margin-right: .5em;
+        margin-left: .5em;
+    }
+
+
 }
 
 @media (min-width: 700px) {
@@ -206,6 +255,11 @@ h2 {
     }
     .screenshot {
         max-width: 55%;
+    }
+
+    .screenshot:hover,
+    .screenshot:focus {
+        max-width: 65%;
     }
 
     .bg-skew{
