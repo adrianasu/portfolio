@@ -10,17 +10,27 @@ body {
 }
 
 .about, .contact {
-    padding: 1em 2em;
+    padding: 2em 3em;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+.about p, .projects p {
+    text-align: left;
 }
 
 h1 {
     text-align: center;
     text-transform: uppercase;
-    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
 }
 
 .orange {
@@ -54,16 +64,30 @@ h1 {
     text-align: left;
     font-size: 1.5em;
     color: #faf9f9;
+    letter-spacing: .04em;
+    font-family: 'Indie Flower',
+    cursive;
+    text-shadow: 2px 2px 4px black;
+}
+
+.spacing {
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+.margin-left {
+    margin-left: .3em;
 }
 
 .intro a {
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     margin: auto;
     color: #13334c;
     display: block;
     font-size: 1.2em;
-    width: 75%;
-    background-color: white;
+    width: 65%;
+    background-color: #faf9f9;
     padding: .7em .6em;
     border-radius: 40px;
     margin-top: 3em;
@@ -78,13 +102,23 @@ h1 {
 
 .projects {
     margin-top: 2em;
+    padding-top: 1em;
+    background: white;
+}
+
+.projects p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.projects a, .contact a {
+    color: black;
 }
 
 .projects>div {
     margin-top: 1em;
     margin-bottom: 1em;
-    padding: .5em 1em;
-    background: white;
+    padding: 0 2.5em 2em;
 }
 
 .stack, .screenshot {
@@ -100,48 +134,63 @@ h1 {
     max-width: 85%;
 }
 
-.logo {
-    max-width: 3em;
-    margin: auto 1em;
-    float: left;
-    margin-left: 40%;
-}
-
-.project>p{
-    clear: left;
-}
-
-.projects button {
-    background-color: black;
-    color: white;
-    padding: 1em .5em;
-    border: none;
-    border-radius: 50px;
-    margin: auto 1em;
-    float: left;
-    margin-left: 10%;
-}
-.buttons-container{
-    overflow: auto;
+.links-container {
     width: 100%;
+    margin: 1em auto 0;
+    text-align: center;
+}
+
+.links-container a {
+    font-size: 1.1em;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .01em;
+}
+
+.logo {
+    max-width: 2.5em;
     margin: auto;
 }
 
+.contact {
+    text-align: center;
+    padding-bottom: 22em;
+}
+
+.space {
+    margin-left: 1em;
+}
+
+.small {
+    max-width: 40%;
+}
+
 @media (orientation: landscape) {
+    .about, .projects, .contact {
+        width: 80%;
+        margin: auto;
+        padding-top: 2.5em;
+    }
     .bg-skew {
         margin-top: -15em;
-        -webkit-transform: skew(0deg, -25deg);
-        transform: skew(0deg, -25deg);
+        -webkit-transform: skew(0deg, 0deg);
+        transform: skew(0deg, 0deg);
+        padding: 7em 0 5em;
     }
     .intro {
-        -webkit-transform: skew(0deg, 25deg);
-        transform: skew(0deg, 25deg);
+        -webkit-transform: skew(0deg, 0deg);
+        transform: skew(0deg, 0deg);
+        margin-top: 3em;
     }
     .intro a {
-        margin-top: 1em;
+        margin-top: 2.5em;
+        width: 50%;
+        font-size: 1.1em;
     }
     .stack {
         max-width: 60%;
+    }
+    .small {
+        max-width: 40%;
     }
     .screenshot {
         max-width: 65%;
@@ -150,9 +199,20 @@ h1 {
 
 @media (min-width: 700px) {
     .stack {
-        max-width: 50%;
+        max-width: 40%;
+    }
+    .small{
+        max-width: 25%;
     }
     .screenshot {
         max-width: 55%;
+    }
+
+    .bg-skew{
+        padding: 10em 0 10em;
+    }
+
+    .intro a {
+        margin-top: 5em;
     }
 }

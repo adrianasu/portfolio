@@ -8,28 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="nav.css">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Oswald|Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
     <title>Adriana Suarez</title>
 </head>
 <body>
     <header>
-        <nav class="nav-container">
-            <!-- <a href="#home" class="logo">Adriana Suarez</a> -->
+        <nav class="nav-container js-nav-container">
             <div class="site-nav">
-                <a href="#projects">PROJECTS</a>
-                <a href="https://github.com/adrianasu?tab=repositories">GITHUB</a>
-                <a href="#contact">LINKEDIN</a>
-                <a href="#contact">LinkedIn</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/adrianasu?tab=repositories">Github</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="nav-toggle-button">
+            <div class="nav-toggle-button  js-nav-toggle-button">
                 <button class="toggle-button">
                     <span class="toggle-button-line"></span>
                     <span class="toggle-button-line"></span>
@@ -42,14 +37,15 @@
         <div class="bg-skew">
             <section class="intro">
                 <p>Hi,</p>
-                <p>I'm <span class="orange"> Adriana Suarez.</span></p>
+                <p>I'm <span class="orange spacing margin-left"> Adriana Suarez.</span></p>
                 <p>I'm a full-stack web developer.</p>
                 <a href="#projects">View my projects</a>
             </section>
         </div>
+        <div id="about" class="anchor" tabindex="-1"></div>
         <section class="about">
             <h1>About</h1>
-            <p></p>
+        
             <p>
                I enjoy working on JavaScript full-stack applications. 
                I like creating responsive and intuitive sites using
@@ -57,23 +53,32 @@
                experience in Node, Express and Mongo.
             </p>
         </section>
+        <div id="projects" class="anchor" tabindex="-1"></div>
         <section class="projects">
             <h1>Projects</h1>
             <div>
-                <h2>The Warehouse Caddy</h2>
-                <img 
-                    src="images/warehouse-screenshots.png" 
-                    class="screenshot"
-                    alt="Landing page of Warehouse App on portrait view and Results display on landscape view." />
-                <div class="buttons-container">
-                    <img src="images/github-logo.png" class="logo"
-                    alt="Github octocat logo." />
-                    <button type="button">Demo</button>
+                <a href="https://warehouse-caddy.herokuapp.com/start" target="_blank">
+                    <h2>The Warehouse Caddy</h2>
+                    <img 
+                        src="images/warehouse-screenshots.png" 
+                        class="screenshot"
+                        alt="Landing page of Warehouse App on portrait view and Results display on landscape view." />
+                </a>
+                <div class="links-container">
+                    <a href="https://github.com/adrianasu/warehouse-inventory-control"
+                        target="_blank">Github-API |</a>
+                    <a href="https://github.com/adrianasu/warehouse-inventory-client"
+                        target="_blank">Github-Client |</a>
+                    <a href="https://warehouse-caddy.herokuapp.com/start"
+                        target="_blank">Demo</a>
                 </div>
                 <p>
-                    This app will allow users to manage and track their
+                    This app helps users to manage and track their
                     tools and equipment. Depending on the user level, the
-                    app is designed
+                    app is designed to authorize different transactions
+                    such as reading lists or reports, doing items' check-in
+                    or check-out, creating, updating, deleting 
+                    items and more.
                 </p>
                 <img 
                     src="images/warehouse-logos.png" 
@@ -83,15 +88,24 @@
             
             <div>
                 <h2>Ready2Go</h2>
-                <img 
-                    src="images/access-screenshots.png" 
-                    class="screenshot"
-                    alt="Landing page of Access Control App on landscape view and Results display on portrait view." />
-
+                <a href="https://ready2go.herokuapp.com/" target="_blank">
+                    <img 
+                        src="images/access-screenshots.png" 
+                        class="screenshot"
+                        alt="Landing page of Access Control App on landscape view and Results display on portrait view." />
+                </a>
+                <div class="links-container">
+                    <a href="https://github.com/adrianasu/access-control" target="_blank">
+                        Github |
+                    </a>
+                    <a href="https://ready2go.herokuapp.com/" target="_blank">
+                        Demo
+                    </a>
+                </div>
                 <p>
                     I designed this app to help people control the access 
                     to their facility. The idea is that when providing a 
-                    valid ID a person will be allowed into that location or
+                    valid ID a person will be allowed into a location or
                     not depending on configurable factors such as
                     authorization, current payment status, traninigs, etc.
                 </p>
@@ -100,33 +114,45 @@
             </div>
             <div>
                 <h2>Pets++</h2>
-                <img 
-                    src="images/pets-screenshots.png" 
-                    class="screenshot"
-                    alt="Landing page of Vets and Pets App on portrait view and Results display on landscape view." />
-            
-            
+                <a href="https://adrianasu.github.io/vets-and-petstores/pets-api.html" target="_blank">                
+                    <img 
+                        src="images/pets-screenshots.png" 
+                        class="screenshot"
+                        alt="Landing page of Vets and Pets App on portrait view and Results display on landscape view." />
+                </a>
+                <div class="links-container">
+                    <a href="https://github.com/adrianasu/vets-and-petstores" target="_blank">
+                        Github |
+                    </a>
+                    <a href="https://adrianasu.github.io/vets-and-petstores/pets-api.html" target="_blank">
+                        Demo
+                    </a>
+                </div>
                 <p>
                     If you like pets, this app is for you!
                     I built this app to quickly find information
-                    (address and phone number) and the location on
-                    a map of the pet shops and vets around you when
-                    providing a zip code.
-                    It combines the information from Yelp and
-                    Google Maps APIs.
+                    about pet shops and vets around a provided 
+                    zip code by combining the information from 
+                    Yelp and Google Maps APIs.
                 </p>
                 <img 
                     src="images/pets-logos.png" 
-                    class="stack" 
+                    class="stack small" 
                     alt="HTML, CSS, JavaScript and JQuery logos" />
             </div>
            
         </section>
+        <div id="contact" class="anchor" tabindex="-1"></div>
         <section class="contact">
             <h1>Contact</h1>
-            <p>I'm available for work, get in touch</p>
-            <p>adrianasu.codes@gmail.com</p>
-            <p>LinkedIn</p>
+            <p>I'm available for work, get in touch.</p>
+            <p><a href="mailto:adrianasu.codes@gmail.com">adrianasu.codes@gmail.com</a></p>
+            <a href="https://github.com/adrianasu" target="_blank">            
+                <img src="images/github-logo.png" class="logo" alt="Github logo." />
+            </a>
+            <a href="https://www.linkedin.com/in/adriana-suarez-519718105/" target="_blank">
+                <img src="images/linkedin-logo.png" class="logo space" alt="Linkedin logo." />
+            </a>
         </section>
     </main>
 </body>
