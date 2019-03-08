@@ -34,8 +34,7 @@ h1 {
     transition: transform 200ms ease;
 }
 
-.projects h2:hover,
-.projects h2:focus{
+.projects h2:hover, .projects h2:focus {
     transform: translateY(-5px);
 }
 
@@ -71,8 +70,7 @@ h1 {
     font-size: 1.5em;
     color: #faf9f9;
     letter-spacing: .04em;
-    font-family: 'Indie Flower',
-    cursive;
+    font-family: 'Indie Flower', cursive;
     text-shadow: 2px 2px 4px black;
 }
 
@@ -141,8 +139,7 @@ h1 {
     transition: max-width 200ms ease;
 }
 
-.screenshot:hover,
-.screenshot:focus {
+.screenshot:hover, .screenshot:focus {
     max-width: 87%;
 }
 
@@ -151,9 +148,7 @@ h1 {
     margin: 1em auto 0;
     text-align: center;
     font-size: 1.1em;
-    font-family: 'Oswald',
-    sans-serif;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 .links-container a {
@@ -163,8 +158,7 @@ h1 {
     transition: font-size 50ms ease;
 }
 
-.links-container a:hover,
-.links-container a:focus {
+.links-container a:hover, .links-container a:focus {
     color: orange;
 }
 
@@ -177,19 +171,16 @@ h1 {
     text-align: center;
     padding-bottom: 22em;
 }
-.contact .logo{
+
+.contact .logo {
     transition: transform 100ms ease;
 }
 
-
-.contact a:focus,
-.contact a:hover{
+.contact a:focus, .contact a:hover {
     color: orange;
-
 }
 
-.contact .logo:focus,
-.contact .logo:hover{
+.contact .logo:focus, .contact .logo:hover {
     transform: translateY(-8px);
 }
 
@@ -206,6 +197,10 @@ h1 {
         width: 80%;
         margin: auto;
         padding-top: 2.5em;
+    }
+    .projects p, .about p {
+        margin: 1.5em auto;
+        width: 85%;
     }
     .bg-skew {
         margin-top: -15em;
@@ -232,40 +227,39 @@ h1 {
     .screenshot {
         max-width: 65%;
     }
-
-    .screenshot:hover,
-    .screenshot:focus {
+    .screenshot:hover, .screenshot:focus {
         max-width: 66%;
     }
-
-    .links-container a{
+    .links-container a {
         margin-right: .5em;
         margin-left: .5em;
     }
-
-
 }
 
 @media (min-width: 700px) {
     .stack {
         max-width: 40%;
     }
-    .small{
+    .projects p, .about p {
+        width: 75%;
+    }
+
+    .projects h2 {
+        margin-left: 1em;
+    }
+
+    .small {
         max-width: 25%;
     }
     .screenshot {
         max-width: 55%;
     }
-
-    .screenshot:hover,
-    .screenshot:focus {
+    .screenshot:hover, .screenshot:focus {
         max-width: 65%;
     }
-
-    .bg-skew{
+    .bg-skew {
         padding: 10em 0 10em;
     }
-
     .intro a {
         margin-top: 5em;
     }
