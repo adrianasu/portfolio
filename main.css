@@ -82,6 +82,7 @@ h1 {
 .intro p {
     text-align: left;
     font-size: 1.6em;
+
     color: #faf9f9;
     letter-spacing: .04em;
     font-family: 'Indie Flower', cursive;
@@ -248,7 +249,7 @@ h1 {
         transform: skew(0deg, 0deg);
         margin-top: 0em;
         border-radius: 50em 15em 55em 30em;
-        background: #fafafa;
+        background: #fffdf6;
     }
     .intro p {
         margin: 1em .2em;
@@ -313,9 +314,7 @@ h1 {
         box-shadow: 1px 2px 1px #13334c;
     }
     .intro {
-        /* margin-top: 1.5em; */
         border-radius: 80em 0em 95em 30em;
-        background: #faf9f9;
     }
     .intro p {
         font-size: 2em;
