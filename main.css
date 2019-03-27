@@ -46,7 +46,7 @@ h1 {
     background: linear-gradient(to bottom right, #13334c, #41a7b3);
     -webkit-transform: skew(0deg, -15deg);
     transform: skew(0deg, -15deg);
-    padding: 7em 0 6em;
+    padding: 5em 0 6em;
     margin-top: -12em;
     margin-bottom: 4em;
     display: -webkit-box;
@@ -84,7 +84,8 @@ h1 {
     font-size: 1.8em;
     color: #faf9f9;
     letter-spacing: .04em;
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Didact Gothic', sans-serif;
     text-shadow: 2px 2px 4px black;
 }
 
@@ -283,7 +284,7 @@ h1 {
         margin-top: -15em;
         -webkit-transform: skew(0deg, 0deg);
         transform: skew(0deg, 0deg);
-        padding: 7em 0 5em;
+        padding: 6em 0 5em;
     }
     .intro a {
         margin-top: 0em;
@@ -322,8 +323,8 @@ h1 {
     .intro .my-pic {
         width: 9em;
     }
-    .pink {
-        font-size: 1.2em;
+    .name {
+        font-size: 1.1em;
     }
     .stack {
         max-width: 40%;
