@@ -38,8 +38,8 @@ h1 {
     transform: translateY(-5px);
 }
 
-.orange {
-    color: orange;
+.pink {
+    color: #ca2374;
 }
 
 .bg-skew {
@@ -60,14 +60,28 @@ h1 {
 .intro {
     -webkit-transform: skew(0deg, 15deg);
     transform: skew(0deg, 15deg);
-    padding-top: 8em;
+    padding-top: 12em;
     max-width: 75%;
     margin: 0 auto;
 }
 
+.my-pic {
+    border-radius: 5em
+}
+
+.intro .my-pic {
+    display: none;
+}
+
+.about .my-pic {
+    display: block;
+    margin: auto;
+    width: 8em;
+}
+
 .intro p {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #faf9f9;
     letter-spacing: .04em;
     font-family: 'Indie Flower', cursive;
@@ -87,21 +101,22 @@ h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     margin: auto;
-    color: #13334c;
     display: block;
     font-size: 1.2em;
     width: 65%;
-    background-color: #faf9f9;
+    background-color: #1b1919;
+    color: #faf9f9;
     padding: .7em .6em;
     border-radius: 40px;
     margin-top: 3em;
-    box-shadow: 1px 2px 1px #98ccd3;
-    transition: background-color 25ms ease;
+    box-shadow: 1px 2px 1px grey;
+    transition: box-shadow 1s ease;
 }
 
 .intro a:hover, .intro a:focus {
-    background-color: #41a7b3;
-    color: lightgray;
+    background-color: #ca2374;
+    box-shadow: 1px 1px 1px black;
+    color: #fafafa;
 }
 
 .projects {
@@ -224,6 +239,36 @@ h1 {
 }
 
 @media (orientation: landscape) {
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        -webkit-transform: skew(0deg, 0deg);
+        transform: skew(0deg, 0deg);
+        margin-top: 0em;
+        border-radius: 50em 15em 55em 30em;
+        background: #fafafa;
+    }
+    .intro p {
+        margin: 1em .2em;
+        font-weight: bold;
+        color: black;
+        padding-left: 3.5em;
+        text-shadow: 2px 2px 4px gray;
+    }
+    .greet {
+        width: 70%;
+    }
+    .about .my-pic {
+        display: none;
+    }
+    .intro .my-pic {
+        display: block;
+        margin: auto;
+        width: 8em;
+        align-self: flex-start;
+    }
     .about, .projects, .contact {
         width: 80%;
         margin: auto;
@@ -239,15 +284,11 @@ h1 {
         transform: skew(0deg, 0deg);
         padding: 7em 0 5em;
     }
-    .intro {
-        -webkit-transform: skew(0deg, 0deg);
-        transform: skew(0deg, 0deg);
-        margin-top: 3em;
-    }
     .intro a {
-        margin-top: 1.5em;
-        width: 50%;
-        font-size: 1.1em;
+        margin-top: 0em;
+        margin-right: 0em;
+        width: 40%;
+        font-size: 1em;
     }
     .stack {
         max-width: 60%;
@@ -272,16 +313,19 @@ h1 {
         box-shadow: 1px 2px 1px #13334c;
     }
     .intro {
-        margin-top: 6em;
+        /* margin-top: 1.5em; */
+        border-radius: 80em 0em 95em 30em;
+        background: #faf9f9;
     }
     .intro p {
         font-size: 2em;
-        font-weight: bold;
     }
-    .orange {
+    .intro .my-pic {
+        width: 9em;
+    }
+    .pink {
         font-size: 1.2em;
     }
-  
     .stack {
         max-width: 40%;
     }
@@ -289,7 +333,8 @@ h1 {
         width: 75%;
     }
     .projects h2 {
-        margin-left: 1em;
+        margin-left: 1.5em;
+        font-size: 1.5em;
     }
     .small {
         max-width: 25%;
@@ -301,9 +346,9 @@ h1 {
         max-width: 65%;
     }
     .bg-skew {
-        padding: 10em 0 10em;
+        padding: 10em 0 6em;
     }
     .intro a {
-        margin-top: 5em;
+        margin-top: 4em;
     }
 }
