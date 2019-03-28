@@ -46,7 +46,7 @@ h1 {
     background: linear-gradient(to bottom right, #13334c, #41a7b3);
     -webkit-transform: skew(0deg, -15deg);
     transform: skew(0deg, -15deg);
-    padding: 5em 0 6em;
+    padding: 4em 0 5.5em;
     margin-top: -12em;
     margin-bottom: 4em;
     display: -webkit-box;
@@ -217,18 +217,18 @@ h1 {
 
 @keyframes bounce {
     0% {
-        transform: translate(95px, -10px);
-        -ms-transform: translate(95px, -10px);
+        transform: translate(200px, -10px);
+        -ms-transform: translate(200px, -10px);
         /* IE 9 */
-        -webkit-transform: translate(95px, -10px);
+        -webkit-transform: translate(200px, -10px);
         /* Safari */
     }
     40% {
-        -ms-transform: translate(25px, 10px);
+        -ms-transform: translate(-100px, 30px);
         /* IE 9 */
-        -webkit-transform: translate(25px, 10px);
+        -webkit-transform: translate(-100px, 30px);
         /* Safari */
-        transform: translate(25px, 10px);
+        transform: translate(-100px, 30px);
     }
     80% {
         -ms-transform: translate(45px, 3px);
@@ -268,7 +268,7 @@ h1 {
     .intro .my-pic {
         display: block;
         margin: auto;
-        width: 8em;
+        width: 9em;
         align-self: flex-start;
     }
     .about, .projects, .contact {
@@ -321,7 +321,8 @@ h1 {
         font-size: 2em;
     }
     .intro .my-pic {
-        width: 9em;
+        width: 12em;
+        border-radius: 7em;
     }
     .name {
         font-size: 1.1em;
@@ -346,7 +347,7 @@ h1 {
         max-width: 65%;
     }
     .bg-skew {
-        padding: 10em 0 6em;
+        padding: 10em 0 10em;
     }
     .intro a {
         margin-top: 4em;
