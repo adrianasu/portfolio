@@ -31,7 +31,7 @@ h1 {
 .projects h2 {
     font-size: 1.4em;
     margin-bottom: 1em;
-    transition: transform 200ms ease;
+    transition: transform 400ms ease;
 }
 
 .projects h2:hover, .projects h2:focus {
@@ -125,7 +125,18 @@ h1 {
     background: white;
 }
 
-.projects p {
+.project-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "title" "screenshot" "links" "description" "stack";
+}
+
+.project-title {
+    grid-area: title;
+}
+
+.description {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -143,10 +154,16 @@ h1 {
 .stack, .screenshot {
     display: block;
     margin: auto;
+    align-self: center;
 }
 
 .stack {
     max-width: 70%;
+    grid-area: stack;
+}
+
+.screenshot a {
+    grid-area: screenshot;
 }
 
 .screenshot {
@@ -159,6 +176,7 @@ h1 {
 }
 
 .links-container {
+    grid-area: links;
     width: 100%;
     margin: 1em auto 0;
     text-align: center;
@@ -270,13 +288,13 @@ h1 {
         width: 9em;
         align-self: flex-start;
     }
-    .about, .projects, .contact {
+    .about, .contact {
         width: 80%;
         margin: auto;
         padding-top: 2.5em;
     }
     .projects p, .about p {
-        margin: 1.5em auto;
+        margin: 1em auto;
         width: 85%;
     }
     .bg-skew {
@@ -291,17 +309,29 @@ h1 {
         width: 40%;
         font-size: 1em;
     }
+    .project-container {
+        grid-template-columns: 45% 55%;
+        grid-template-rows: auto;
+        grid-template-areas: "title title" "screenshot description" "links stack";
+    }
+    .projects>div {
+        margin-bottom: 0;
+        padding: 0 2.5em 1em;
+    }
     .stack {
         max-width: 60%;
     }
     .small {
         max-width: 40%;
     }
+    .project-container a {
+        align-self: center;
+    }
     .screenshot {
-        max-width: 65%;
+        max-width: 85%;
     }
     .screenshot:hover, .screenshot:focus {
-        max-width: 66%;
+        max-width: 90%;
     }
     .links-container a {
         margin-right: .5em;
@@ -326,12 +356,23 @@ h1 {
     .name {
         font-size: 1.1em;
     }
-    .stack {
-        max-width: 40%;
-    }
-    .projects p, .about p {
+    .about p {
         width: 75%;
     }
+    .project-container {
+        grid-template-columns: 55% 45%;
+    }
+    .projects p{
+        width: 75%;
+    }
+    .description{
+        align-self: center;
+        justify-self: end;
+    }
+    .stack {
+        max-width: 50%;
+    }
+    
     .projects h2 {
         margin-left: 1.5em;
         font-size: 1.5em;
@@ -340,10 +381,10 @@ h1 {
         max-width: 25%;
     }
     .screenshot {
-        max-width: 45%;
+        max-width: 65%;
     }
     .screenshot:hover, .screenshot:focus {
-        max-width: 55%;
+        max-width: 70%;
     }
     .bg-skew {
         padding: 10em 0 10em;
