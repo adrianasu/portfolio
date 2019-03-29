@@ -340,10 +340,10 @@ h1 {
         max-width: 25%;
     }
     .screenshot {
-        max-width: 55%;
+        max-width: 45%;
     }
     .screenshot:hover, .screenshot:focus {
-        max-width: 65%;
+        max-width: 55%;
     }
     .bg-skew {
         padding: 10em 0 10em;
