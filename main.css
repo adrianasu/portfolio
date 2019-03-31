@@ -58,8 +58,6 @@ h1 {
     padding-top: 12em;
     max-width: 75%;
     margin: 0 auto;
-    /* border-radius: 50em 15em 55em 30em;
-    background: #fffdf6; */
 }
 
 .my-pic {
@@ -110,7 +108,7 @@ h1 {
     transition: box-shadow 1s ease;
     animation-name: bounce;
     animation-duration: 1.5s;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-timing-function: ease-in;
     animation-iteration-count: 3;
 }
@@ -129,21 +127,21 @@ h1 {
         -webkit-transform: translateY(-5px);
         /* Safari */
     }
-    33% {
+    35% {
         -ms-transform: translateY(0px);
         /* IE 9 */
         -webkit-transform: translateY(0px);
         /* Safari */
         transform: translateY(0px);
     }
-    66% {
+    65% {
         -ms-transform: translateY(-5px);
         /* IE 9 */
         -webkit-transform: translateY(-5px);
         /* Safari */
         transform: translateY(-5px);
     }
-    100% {
+    90% {
         -ms-transform: translateY(0px);
         /* IE 9 */
         -webkit-transform: translateY(0px);
