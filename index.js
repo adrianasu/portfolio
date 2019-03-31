@@ -1,3 +1,13 @@
+// Make scrollToTop button appear and disappear
+function watchScrollTopBtn(){
+    $(window).scroll(function(){
+        $(window).scrollTop()>280 ?
+            $('.js-toTop').addClass('show')
+            : $('.js-toTop').removeClass('show');
+    })
+}
+
+// Open/close hamburger menu
 function toggleOpenClass(event){
     event.stopPropagation();
     event.stopImmediatePropagation();
@@ -5,7 +15,7 @@ function toggleOpenClass(event){
 }
 
 function watchMobileNavBar() {
-    // Open/close menu when the hamburguer is clicked
+    // Listen for a click on hamburger button
     $('.js-nav-container').on('click', '.js-nav-toggle-button', toggleOpenClass);
 
     // If an option is selected, close the menu
@@ -24,4 +34,9 @@ function watchMobileNavBar() {
     })
 }
 
-$(watchMobileNavBar);
+function main(){
+    watchMobileNavBar();
+    watchScrollTopBtn();
+}
+
+$(main);
