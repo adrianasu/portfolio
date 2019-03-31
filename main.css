@@ -31,11 +31,6 @@ h1 {
 .projects h2 {
     font-size: 1.4em;
     margin-bottom: 1em;
-    transition: transform 400ms ease;
-}
-
-.projects h2:hover, .projects h2:focus {
-    transform: translateY(-5px);
 }
 
 .pink {
@@ -63,6 +58,8 @@ h1 {
     padding-top: 12em;
     max-width: 75%;
     margin: 0 auto;
+    /* border-radius: 50em 15em 55em 30em;
+    background: #fffdf6; */
 }
 
 .my-pic {
@@ -111,6 +108,11 @@ h1 {
     margin-top: 3em;
     box-shadow: 1px 2px 1px grey;
     transition: box-shadow 1s ease;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
 }
 
 .intro a:hover, .intro a:focus {
@@ -119,9 +121,40 @@ h1 {
     color: #fafafa;
 }
 
+@keyframes bounce {
+    10% {
+        transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        /* IE 9 */
+        -webkit-transform: translateY(-5px);
+        /* Safari */
+    }
+    33% {
+        -ms-transform: translateY(0px);
+        /* IE 9 */
+        -webkit-transform: translateY(0px);
+        /* Safari */
+        transform: translateY(0px);
+    }
+    66% {
+        -ms-transform: translateY(-5px);
+        /* IE 9 */
+        -webkit-transform: translateY(-5px);
+        /* Safari */
+        transform: translateY(-5px);
+    }
+    100% {
+        -ms-transform: translateY(0px);
+        /* IE 9 */
+        -webkit-transform: translateY(0px);
+        /* Safari */
+        transform: translateY(0px);
+    }
+}
+
 .projects {
     margin-top: 2em;
-    padding-top: 1em;
+    padding-top: 3em;
     background: white;
 }
 
@@ -130,6 +163,9 @@ h1 {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "title" "screenshot" "links" "description" "stack";
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 2.5em 2em;
 }
 
 .project-title {
@@ -143,12 +179,6 @@ h1 {
 
 .projects a, .contact a {
     color: black;
-}
-
-.projects>div {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 0 2.5em 2em;
 }
 
 .stack, .screenshot {
@@ -202,7 +232,7 @@ h1 {
 
 .contact {
     text-align: center;
-    padding-bottom: 22em;
+    padding-bottom: 23em;
 }
 
 .contact .logo {
@@ -227,12 +257,12 @@ h1 {
 
 .name {
     display: inline-block;
-    animation-name: bounce;
+    animation-name: appear;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes bounce {
+@keyframes appear {
     0% {
         transform: translate(200px, -10px);
         -ms-transform: translate(200px, -10px);
@@ -293,6 +323,9 @@ h1 {
         margin: auto;
         padding-top: 2.5em;
     }
+    .contact {
+        padding-bottom: 10em;
+    }
     .projects p, .about p {
         margin: 1em auto;
         width: 85%;
@@ -313,8 +346,6 @@ h1 {
         grid-template-columns: 45% 55%;
         grid-template-rows: auto;
         grid-template-areas: "title title" "screenshot description" "links stack";
-    }
-    .projects>div {
         margin-bottom: 0;
         padding: 0 2.5em 1em;
     }
@@ -361,18 +392,18 @@ h1 {
     }
     .project-container {
         grid-template-columns: 55% 45%;
+        padding-bottom: 4em;
     }
-    .projects p{
+    .projects p {
         width: 75%;
     }
-    .description{
+    .description {
         align-self: center;
         justify-self: end;
     }
     .stack {
         max-width: 50%;
     }
-    
     .projects h2 {
         margin-left: 1.5em;
         font-size: 1.5em;
@@ -392,5 +423,8 @@ h1 {
     .intro a {
         margin-top: 4em;
         font-size: 1.3em;
+    }
+    .contact {
+        padding-bottom: 25em;
     }
 }
