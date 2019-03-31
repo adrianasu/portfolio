@@ -1,5 +1,5 @@
-// Make scrollToTop button appear and disappear
-function watchScrollTopBtn(){
+// Make scrollToTop link appear and disappear
+function watchScrollTopLink(){
     $(window).scroll(function(){
         $(window).scrollTop()>280 ?
             $('.js-toTop').addClass('show')
@@ -36,7 +36,7 @@ function watchMobileNavBar() {
 
 function main(){
     watchMobileNavBar();
-    watchScrollTopBtn();
+    watchScrollTopLink();
 }
 
 $(main);
