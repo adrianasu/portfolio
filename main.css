@@ -121,10 +121,10 @@ h1 {
 
 @keyframes bounce {
     10% {
-        transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
+        transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
         /* IE 9 */
-        -webkit-transform: translateY(-5px);
+        -webkit-transform: translateY(-8px);
         /* Safari */
     }
     35% {
@@ -135,11 +135,11 @@ h1 {
         transform: translateY(0px);
     }
     65% {
-        -ms-transform: translateY(-5px);
+        -ms-transform: translateY(-8px);
         /* IE 9 */
-        -webkit-transform: translateY(-5px);
+        -webkit-transform: translateY(-8px);
         /* Safari */
-        transform: translateY(-5px);
+        transform: translateY(-8px);
     }
     90% {
         -ms-transform: translateY(0px);
