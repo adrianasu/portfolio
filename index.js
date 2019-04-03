@@ -1,3 +1,22 @@
+// Add smooth scrolling to all links
+function watchScrollLinks(){
+    $('a').on('click', function(event){
+        // Make sure this.hash has a value
+        // before overriding default behavior
+        if(this.hash !== "" ){
+            event.preventDefault();
+            let hash = this.hash;
+            // jQuery 's animate() method adds smooth page scroll
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            // number of milliseconds it takes to scroll
+            }, 500, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+}
+
 // Make scrollToTop link appear and disappear
 function watchScrollTopLink(){
     $(window).scroll(function(){
@@ -37,6 +56,7 @@ function watchMobileNavBar() {
 function main(){
     watchMobileNavBar();
     watchScrollTopLink();
+    watchScrollLinks();
 }
 
 $(main);
