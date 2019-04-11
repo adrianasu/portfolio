@@ -93,7 +93,7 @@ h1 {
 }
 
 .intro a {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     margin: auto;
     display: block;
@@ -126,7 +126,7 @@ h1 {
     transition: opacity .5s, visibility .5s, color 1s;
 }
 
-.toTop:hover, .toTop:focus{
+.toTop:hover, .toTop:focus {
     color: #13334c;
 }
 
@@ -237,7 +237,6 @@ h1 {
     display: inline-block;
 }
 
-
 @media (orientation: landscape) {
     .intro {
         display: flex;
@@ -258,7 +257,7 @@ h1 {
         padding-left: 3.5em;
         text-shadow: 2px 2px 4px slategrey;
     }
-    .toTop{
+    .toTop {
         font-size: 1.8em;
     }
     .greet {
@@ -316,7 +315,6 @@ h1 {
     .screenshot {
         max-width: 85%;
     }
-
     .links-container a {
         margin-right: .5em;
         margin-left: .5em;
@@ -372,7 +370,6 @@ h1 {
     .screenshot {
         max-width: 65%;
     }
-  
     .bg-skew {
         padding: 10em 0 10em;
     }
